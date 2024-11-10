@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load
+    <!-- <load
       src="./partials/header.html"
       icon-path="./img/sprite.svg#logo"
       highlight-curr="active"
@@ -23,6 +23,27 @@
       </div>
     </main>
 
-    <load src="./partials/footer.html" />
+    <load src="./partials/footer.html" /> -->
+    <form class="form">
+      <label>
+        Delay (ms)
+        <input type="number" name="delay" required />
+      </label>
+
+      <fieldset>
+        <legend>State</legend>
+        <label>
+          <input type="radio" name="state" value="fulfilled" required />
+          Fulfilled
+        </label>
+        <label>
+          <input type="radio" name="state" value="rejected" required />
+          Rejected
+        </label>
+      </fieldset>
+
+      <button type="submit">Create notification</button>
+    </form>
+    <script type="module" src="./js/2-snackbar.js"></script>
   </body>
 </html>
